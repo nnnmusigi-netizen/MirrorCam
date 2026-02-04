@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "거울카메라",
+    "slug": "MirrorCam",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1a2e"
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "사진 촬영을 위해 카메라 접근이 필요합니다"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "사진 저장을 위해 갤러리 접근이 필요합니다",
+          "savePhotosPermission": "사진 저장을 위해 갤러리 접근이 필요합니다"
+        }
+      ]
+    ]
+  }
+}
